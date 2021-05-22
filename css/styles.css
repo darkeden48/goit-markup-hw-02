@@ -1,19 +1,66 @@
 :root {
-    background-color: var(--black);
-    background: var(--white);
-
+    --background-color: #ffffff;
+    --text-color: #212121 ;
 }
 body{
     font-family: Roboto;
     font-style: normal;
+    color: var(--text-color);
  }
- 
- 
+ /* HEADER */
+ .logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;    
+    color: #2196F3;
+ }
+ .menu-element{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color:inherit;
+ }
+ .menu-element:focus, .menu-element:hover {
+     color: #2196F3;
+
+ }
+ .header-contact{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #757575;
+    color:inherit;}
+.header-contact:focus, .header-contact:hover {
+        color: #2196F3;
+
+}
+ /* FOOTER */
+.footer{
+    background: #2F303A;
+}
+.address{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
+}
+.info{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    color:inherit;
+}
+
+ /* INDEX-PAGE */
+ /* hero-section */
  .hero-text{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
- }
+}
  .hero-button{
      background-color: #2196F3;
      color: #ffffff;
@@ -22,6 +69,47 @@ body{
      font-weight: bold;
      font-size: 16px;
      line-height: 1.87;
+}
+/* section-one */
+.title-first{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.text-first{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+}
+/* section-two */
+.second-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+/* section-three */
+.title-three{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.title-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18px;
+}
+.name-info{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18px;
+    color: #757575;
+}
 
- }
+
+
+
+
+
+
 
