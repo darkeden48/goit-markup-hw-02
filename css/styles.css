@@ -1,20 +1,29 @@
 :root {
     --background-color: #ffffff;
-    --text-color: #212121 ;
+    --text-color: #212121;
+    --under-text-color: #757575;
+    --animation-links: #2196F3;
+    --animation-bottons: #2196F3;
+    --buttons-background: #F5F4FA;
 }
 body{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
+    font-weight: normal;
     color: var(--text-color);
  }
+ a {text-decoration: none;}
+ ul{list-style: none;}
  /* HEADER */
- .logo{
+ .web, .studio{
     font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;    
-    color: #2196F3;
+    line-height: 1.19; 
+    color: var(--text-color);
+}
+ .web{
+     color: #2196F3;
  }
  .menu-element{
     font-weight: 500;
@@ -23,45 +32,61 @@ body{
     color:inherit;
  }
  .menu-element:focus, .menu-element:hover {
-     color: #2196F3;
+     color:var(--animation-links);
 
+ }
+ .menu-element-active{
+     color: var(--animation-links);
  }
  .header-contact{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
+    color: var(--under-text-color);
     color:inherit;}
 .header-contact:focus, .header-contact:hover {
-        color: #2196F3;
+        color:var(--animation-links);
 
 }
  /* FOOTER */
 .footer{
-    background: #2F303A;
+    background-color: #2F303A;
 }
+ .studio-footer{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #FFFFFF;
+    
+ }
 .address{
+    font-style: normal; /*destroed italic */
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF;
 }
 .info{
-    font-weight: normal;
+    font-style: normal; /*destroed italic */
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    color:inherit;
+    color: rgba(255, 255, 255, 0.6);;
 }
 
- /* INDEX-PAGE */
+ /* INDEX-MAIN */
  /* hero-section */
+ .hero{
+     background-color: #2F303A;
+     color: #FFFFFF;
+ }
  .hero-text{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
 }
  .hero-button{
+    font-family: inherit;
      background-color: #2196F3;
      color: #ffffff;
      rgba(0, 0, 0, 0.15);
@@ -77,10 +102,9 @@ body{
     line-height: 1.14;
 }
 .text-first{
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--under-text-color);
 }
 /* section-two */
 .second-title{
@@ -97,14 +121,46 @@ body{
 .title-name{
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18px;
+    line-height: 1.18;
 }
 .name-info{
-    font-weight: normal;
     font-size: 16px;
-    line-height: 1.18px;
-    color: #757575;
+    line-height: 1.18;
+    color: var(--under-text-color);
 }
+/* PORTFOLIO-MAIN */
+/* buttons */
+.portfolio-menu-item{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color: var(--buttons-background);
+    border-radius: 4px;
+}
+.portfolio-menu-item:hover,
+.portfolio-menu-item:focus{
+    background-color: var(--animation-bottons);
+    color: #FFFFFF;
+}
+/* portfolio */
+.portfolio-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text-color);
+    
+}
+.portfolio-text{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--under-text-color);
+}
+
+
+
+
+
 
 
 
