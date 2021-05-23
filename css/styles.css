@@ -42,8 +42,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--under-text-color);
-    color:inherit;}
+    color: var(--under-text-color);}
 .header-contact:focus, .header-contact:hover {
         color:var(--animation-links);
 
@@ -73,9 +72,15 @@ body{
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);;
 }
+.info:focus, .info:hover{
+    color:var(--animation-links);
+}
 
  /* INDEX-MAIN */
  /* hero-section */
+ .shadow-title{
+     color: #FFFFFF;
+ }
  .hero{
      background-color: #2F303A;
      color: #FFFFFF;
@@ -90,10 +95,10 @@ body{
      background-color: #2196F3;
      color: #ffffff;
      rgba(0, 0, 0, 0.15);
-     border-radius: 4px;
      font-weight: bold;
      font-size: 16px;
      line-height: 1.87;
+     cursor:pointer;
 }
 /* section-one */
 .title-first{
@@ -136,7 +141,10 @@ body{
     font-size: 16px;
     line-height: 1.62;
     background-color: var(--buttons-background);
-    border-radius: 4px;
+    cursor:pointer;
+}
+.active {
+    background-color: var(--animation-bottons);
 }
 .portfolio-menu-item:hover,
 .portfolio-menu-item:focus{
